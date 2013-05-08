@@ -56,7 +56,7 @@ int Client::Start()
 		else if (str == "giveup") {
 			command_info->setParam(Info::PARAM_NAME_CODE, util::itos(Info::CLIENT_CODE_GIVE_UP));
 		}
-		else if (str == "step" || "s") {
+		else if (str == "step" || str == "s") {
 			int x,y;
 			//cout << "Enter coordinates\n";
 			if (scanf("%d %d", &x, &y) != 2) {				
